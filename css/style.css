@@ -1,0 +1,458 @@
+:root {
+    --accent-color: #26C6EA;
+    --main-color: #0B0E66;
+    --text-color: #141414;
+}
+body {
+    font-family: Inter;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.container {
+    width: 1037px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    background-image: linear-gradient(
+        to right,
+        rgba(43, 74, 97, 0.87),
+        rgba(43, 74, 97, 0.8)
+    ),
+    url(../image/navigation_jpg4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 39px;
+    padding-bottom: 39px;
+    border-bottom: 3px solid #eee;
+  
+    display: flex;
+    text-align: center;
+    max-width: 1550px;
+    margin: 0 auto;
+}
+.navigation-img {
+    margin-right: auto;
+}
+.navigation-list {
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     margin-left: 168px;
+     margin-right: 210px;
+    width: 325px;
+}
+.navigation-item + .navigation-item {
+    margin-left: 38px;
+}
+.navigation-link {
+    color: #FFF;
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.2;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+}
+.navigation-link:focus,
+.navigation-link:hover {
+    color: var(--accent-color);
+}
+.navigation-br {
+    color: var(--accent-color);
+        font-size: 20px;
+        line-height: 1.25;
+        text-decoration: none;
+        border-radius: 45px 0px;
+        border: 2px solid #26C7EA;
+        background: #0B0E66;
+        padding: 9px 38px 8px 38px ;
+      
+}
+.div-ENG {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-text {
+    color: #FFF;
+        text-align: center;
+        font-family: "Hammersmith One";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+.svitch {
+    margin-right: 50px;
+}
+.switcher {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.container-clan{
+    padding-top: 180px;
+    padding-bottom: 180px;
+    background-image: url(../image/clan_png1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1550px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.clan-text,
+.clan-translated-text {
+    color: #FFF;
+        font-family: Inter, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.2;
+        
+}
+.clan-translated-text{
+margin-bottom: 42px;
+}
+.clan-text {
+    width: 298px;
+}
+.clan-text::after {
+    content:" ";
+    background-image: url(../image/clan_png2.png);
+    background-repeat: no-repeat;
+    display: block;
+    height: 40px;
+    width: 152px;
+    margin: 0 auto;
+}
+.content-wrapper {
+    width: 376px;
+    margin-left: 50px;
+}
+.clan-br {
+    color: var(--accent-color);
+        font-size: 24px;
+        text-decoration: none;
+        border-radius: 45px 0px;
+            border: 2px solid #26C7EA;
+            background: #0B0E66;
+            padding: 10px 30px 10px 31px;
+            display: block;
+            width: 260px;
+            text-align: center;
+}
+.clan-speak{
+    padding-top: 75px;
+    padding-bottom: 10px;
+}
+.clan-title {
+color: #0A3853;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 16px;
+   
+}
+.people {
+    margin-bottom: 4px;
+    width: 724px;
+    margin: 0 auto;
+}
+.clan-name {
+    color: #000;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 400;
+}
+.clan-masenger {
+    margin-top: 120px;
+    margin-right: 50px;
+}
+.masenger-button + .masenger-button {
+    margin-top: 15px;
+}
+.clan-name::after {
+    content: "";
+    background-image: url(../image/clan_png3.png);
+    background-repeat: no-repeat;
+    display: block;
+    height: 120px;
+    width: 400px;
+    margin: 0 auto;
+}
+.treiler-wraper {
+    padding-top: 330px;
+    padding-bottom: 331px;
+    padding-left: 650px;
+    background-image: url(../image/treiler_png1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1550px;
+    margin: 0 auto;
+}
+.treiler-br {
+    color: var(--accent-color);
+        font-size: 24px;
+        line-height: normal;
+        text-decoration: none;
+        border-radius: 45px 0px;
+        border: 2px solid #26C7EA;
+        background: #0B0E66;
+        padding: 19px 25px 20px 25px;
+ }
+ .treiler-title {
+    color: #141414;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 16px;
+ }
+.energy {
+    margin-bottom: 4px;
+    width: 886px;
+    margin: 0 auto;
+}
+
+ .treiler-name {
+     color: #000;
+     text-align: center;
+     font-size: 24px;
+     font-weight: 400;
+ }
+ .treiler-name::after {
+    content: "";
+    background-image: url(../image/clan_png3.png);
+    background-repeat: no-repeat;
+    display: block;
+    height: 130px;
+    width: 400px;
+    margin: 0 auto;
+ }
+ .treiler-speak {
+    margin-top: 75px;
+    margin-bottom: 10px;
+ }
+ .language-title-study {
+    color: #141414;
+        text-align: center;
+        font-family: HeadlandOne;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: normal;
+        padding-bottom: 45px;
+ }
+ .language-wraper {
+    padding-top: 58px;
+        padding-bottom: 57px;
+        background-image: url(../image/language_png1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 1550px;
+        margin: 0 auto;
+ }
+ .language-list {
+   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+ }
+ .language-item {
+    outline: 1px solid #eee;
+        flex-shrink: 0;
+        flex-basis: calc((100% - 70px) / 3);
+        background-color: rgba(255, 255, 255, 0.70);
+        height: 240px;
+ }
+ .language-text {
+        font-family: HeadlandOne;
+        font-size: 24px;
+        line-height: 24px;
+        /* 100% */
+ }
+ .UA {
+    color: #141414;
+ }
+ 
+ .left::after {
+    content:" ";
+        background-image: url(../image/language_png2.png);
+        background-repeat: no-repeat;
+        display: block;
+        height: 40px;
+        width: 152px;
+        margin: 0 auto;
+        display: flex;
+ }
+ .center::after {
+    content: " ";
+        background-image: url(../image/language_png3.png);
+        background-repeat: no-repeat;
+        display: block;
+        height: 40px;
+        width: 152px;
+        margin: 0 auto;
+        text-align: center;
+ }
+ .right::after {
+    content: " ";
+        background-image: url(../image/language_png4.png);
+        background-repeat: no-repeat;
+        display: block;
+        height: 40px;
+        width: 152px;
+        margin: 0 auto;
+        text-align: center;
+ }
+ .language-speak {
+    padding-top: 75px;
+    padding-bottom: 10px;
+ }
+.language-title {
+    color: #141414;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: normal;
+        width: 1000px;
+        margin: 0 auto;
+}
+.language-name {
+    color: #000;
+    text-align: center;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: normal;
+}
+
+.language-name::after {
+    content: "";
+    background-image: url(../image/clan_png3.png);
+    background-repeat: no-repeat;
+    display: block;
+    height: 120px;
+    width: 400px;
+    margin: 0 auto;
+}
+.footer {
+    background-image: linear-gradient(to right,
+            rgba(43, 74, 97, 0.87),
+            rgba(43, 74, 97, 0.8)),
+        url(../image/navigation_jpg4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 77px;
+    padding-bottom: 25px;
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+.footer-pozition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-list {
+    margin-left: 80px;
+    margin-right: 204px;
+}
+
+.footer-item {
+    display: flex;
+    text-align: center;
+}
+
+.logo-wraper {
+    margin-left: 20px;
+}
+
+.footer-item-title {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 16px;
+    padding-right: 4px;
+}
+
+.footer-item-line {
+    background-repeat: no-repeat;
+    display: block;
+    text-align: center;
+}
+
+.One {
+    height: 2px;
+    width: 269px;
+}
+
+.tvo {
+    height: 2px;
+    width: 194px;
+}
+
+.footer-link {
+    color: #FFF;
+    font-size: 20px;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.footer-link {
+    text-align: center;
+}
+
+.avatar-info {
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

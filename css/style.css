@@ -72,7 +72,7 @@ img {
   
     display: flex;
     text-align: center;
-    max-width: 1550px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .navigation-img {
@@ -95,8 +95,7 @@ img {
         font-size: 20px;
         line-height: 1.2;
         text-decoration: none;
-        display: flex;
-        justify-content: center;
+       
 }
 .navigation-link:focus,
 .navigation-link:hover {
@@ -134,16 +133,15 @@ img {
     margin-left: 10px;
     margin-right: 10px;
 }
-.container-clan{
+.clan{
     padding-top: 180px;
     padding-bottom: 180px;
     background-image: url(../image/clan_png1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1550px;
+    max-width:  1440px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+  
 }
 .clan-text,
 .clan-translated-text {
@@ -156,6 +154,7 @@ img {
 }
 .clan-translated-text{
 margin-bottom: 42px;
+width: 300px;
 }
 .clan-text {
     width: 298px;
@@ -200,7 +199,6 @@ color: #0A3853;
 }
 .people {
     margin-bottom: 4px;
-    width: 724px;
     margin: 0 auto;
 }
 .clan-name {
@@ -212,6 +210,8 @@ color: #0A3853;
 .clan-masenger {
     margin-top: 120px;
     margin-right: 50px;
+ 
+      
 }
 .masenger-button + .masenger-button {
     margin-top: 15px;
@@ -232,7 +232,7 @@ color: #0A3853;
     background-image: url(../image/treiler_png1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1550px;
+    max-width:  1440px;
     margin: 0 auto;
 }
 .treiler-br {
@@ -287,13 +287,13 @@ color: #0A3853;
         line-height: normal;
         padding-bottom: 45px;
  }
- .language-wraper {
+ .language {
     padding-top: 58px;
         padding-bottom: 57px;
         background-image: url(../image/language_png1.png);
         background-repeat: no-repeat;
         background-size: cover;
-        max-width: 1550px;
+        max-width:1440px;
         margin: 0 auto;
  }
  .language-list {
@@ -388,14 +388,14 @@ color: #0A3853;
     background-size: cover;
     padding-top: 77px;
     padding-bottom: 25px;
-    max-width: 1550px;
+    max-width:  1440px;
     margin: 0 auto;
 }
 
-.footer-pozition {
+.footer-position {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .footer-list {
@@ -406,20 +406,27 @@ color: #0A3853;
 .footer-item {
     display: flex;
     text-align: center;
+    align-items: center;
+}
+.footer-item:nth-child(1) {
+    margin-bottom: 16px;
 }
 
-.logo-wraper {
-    margin-left: 20px;
+.logo-wraper::after {
+    content:"";
+    background-color: #FFF;
+    display: block;
+    height: 153px;
+    width: 2px;
 }
 
 .footer-item-title {
     color: #FFF;
+    margin-right: 20px;
+    margin-left: 80px;
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
-    line-height: normal;
-    padding-bottom: 16px;
-    padding-right: 4px;
 }
 
 .footer-item-line {
@@ -443,6 +450,7 @@ color: #0A3853;
     font-size: 20px;
     line-height: normal;
     text-decoration: none;
+    margin-left: 20px;
 }
 
 .footer-link {
@@ -455,4 +463,5 @@ color: #0A3853;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-left: 45%;
 }

@@ -133,6 +133,108 @@ img {
     margin-left: 10px;
     margin-right: 10px;
 }
+.check {
+    position: relative;
+    border: 2px solid ;
+    border-color: #FFF;
+    line-height: 0;
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+.check input[type="checkbox"],
+.check label,
+.check label::before,
+.check label::after {
+    appearance: none;
+    display: inline-block;
+    font-size: inherit;
+    border-radius: 1em;
+    border: 0;
+    transition: 0.35s ease-in-out;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.check {
+    appearance: none;
+    display: inline-block;
+    border-radius: 1em;
+    transition: 0.35s ease-in-out;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.check label {
+    width: 2.2em;
+    height: 1em;
+    background: transparent;
+    overflow: hidden;
+}
+
+.check input[type="checkbox"] {
+    position: absolute;
+    z-index: 1;
+    width: 0.8em;
+    height: 0.8em;
+    top: 0.1em;
+    left: 0.1em;
+    background: #fff;
+    box-shadow: 0 6px 7px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.check input[type="checkbox"]:checked {
+    left: 1.3em;
+}
+
+.check input[type="checkbox"]:checked+label {
+    background: rgb(48, 87, 255);
+}
+
+.check label::before,
+.check label::after {
+    content: "· ·";
+    position: absolute;
+    overflow: hidden;
+    left: 0.5em;
+    top: 0.5em;
+    height: 1em;
+    letter-spacing: -0.04em;
+    color: #9b9b9b;
+    font-family: "Times New Roman", serif;
+    z-index: 2;
+    font-size: 0.6em;
+    border-radius: 0;
+    transform-origin: 0 0 -0.5em;
+    backface-visibility: hidden;
+}
+
+.check label::after {
+    content: "?";
+    top: 0.65em;
+    left: 0.6em;
+    height: 0.1em;
+    width: 0.35em;
+    font-size: 0.2em;
+    transform-origin: 0 0 -0.4em;
+}
+
+.check input[type="checkbox"]:checked+label::before,
+.check input[type="checkbox"]:checked+label::after {
+    left: 2.55em;
+    top: 0.4em;
+    line-height: 0.1em;
+    transform: rotateY(360deg);
+}
+
+.check input[type="checkbox"]:checked+label::after {
+    height: 0.16em;
+    top: 0.55em;
+    left: 2.6em;
+    font-size: 0.6em;
+    line-height: 0;
+}
 .clan{
     padding-top: 180px;
     padding-bottom: 180px;
@@ -184,39 +286,41 @@ width: 300px;
             width: 260px;
             text-align: center;
 }
-.clan-speak{
+.quote {
     padding-top: 75px;
     padding-bottom: 10px;
 }
-.clan-title {
+.quote-title {
 color: #0A3853;
     text-align: center;
     font-size: 36px;
     font-weight: 400;
     line-height: normal;
     padding-bottom: 16px;
-   
-}
-.people {
+    text-align: center;
     margin-bottom: 4px;
-    margin: 0 auto;
 }
-.clan-name {
+.avatar-quote {
+    min-width: 1100px;
+    display: block;
+}
+.quote-name {
     color: #000;
         text-align: center;
-        font-size: 36px;
+        font-size: 24px;
         font-weight: 400;
 }
-.clan-masenger {
-    margin-top: 120px;
-    margin-right: 50px;
- 
-      
+.clan-position {
+    display: flex;
+    justify-content: space-between;
 }
-.masenger-button + .masenger-button {
-    margin-top: 15px;
+.masenger-list {
+    margin-top: 150px;
 }
-.clan-name::after {
+.masenger-button  {
+    padding-bottom: 30px;
+}
+.quote-name::after {
     content: "";
     background-image: url(../image/clan_png3.png);
     background-repeat: no-repeat;
@@ -225,15 +329,18 @@ color: #0A3853;
     width: 400px;
     margin: 0 auto;
 }
-.treiler-wraper {
-    padding-top: 330px;
-    padding-bottom: 331px;
-    padding-left: 650px;
+.treiler {
     background-image: url(../image/treiler_png1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width:  1440px;
-    margin: 0 auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding-top: 330px;
+        padding-bottom: 330px;
+}
+.treiler-wraper {
+   margin: 0 auto;
+   text-align: center;
 }
 .treiler-br {
     color: var(--accent-color);
@@ -298,28 +405,33 @@ color: #0A3853;
  }
  .language-list {
    display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
- 
+   justify-content: center;
+   flex-wrap: wrap;
+   column-gap: 36px;
+   row-gap: 24px;
  }
  .language-item {
-    outline: 1px solid #eee;
-        flex-shrink: 0;
-        flex-basis: calc((100% - 70px) / 3);
+       flex-basis: calc(100% / 3 - 36px);
         background-color: rgba(255, 255, 255, 0.70);
-        height: 240px;
+        padding: 36px 0px;
  }
  .language-text {
         font-family: HeadlandOne;
         font-size: 24px;
         line-height: 24px;
         /* 100% */
+        text-align: center;
  }
- .UA {
-    color: #141414;
+ .language-translate {
+    color: #000;
+    margin-top: 40px;
+    font-family: HeadlandOne;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
  }
  
- .left::after {
+ .symbol-weapon::after {
     content:" ";
         background-image: url(../image/language_png2.png);
         background-repeat: no-repeat;
@@ -329,7 +441,7 @@ color: #0A3853;
         margin: 0 auto;
         display: flex;
  }
- .center::after {
+ .symbol-bird::after {
     content: " ";
         background-image: url(../image/language_png3.png);
         background-repeat: no-repeat;
@@ -339,7 +451,7 @@ color: #0A3853;
         margin: 0 auto;
         text-align: center;
  }
- .right::after {
+ .reverse-symbol::after {
     content: " ";
         background-image: url(../image/language_png4.png);
         background-repeat: no-repeat;
@@ -348,6 +460,13 @@ color: #0A3853;
         width: 152px;
         margin: 0 auto;
         text-align: center;
+ }
+ .reverse-symbol::after,
+ .symbol-bird::after,
+ .symbol-weapon::after {
+     content: "";
+     display: block;
+     margin-top: 40px;
  }
  .language-speak {
     padding-top: 75px;
@@ -378,6 +497,7 @@ color: #0A3853;
     height: 120px;
     width: 400px;
     margin: 0 auto;
+   
 }
 .footer {
     background-image: linear-gradient(to right,
@@ -386,7 +506,7 @@ color: #0A3853;
         url(../image/navigation_jpg4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 77px;
+    padding-top: 35px;
     padding-bottom: 25px;
     max-width:  1440px;
     margin: 0 auto;
@@ -399,8 +519,8 @@ color: #0A3853;
 }
 
 .footer-list {
-    margin-left: 80px;
-    margin-right: 204px;
+    /* margin-left: 80px;
+    margin-right: 204px; */
 }
 
 .footer-item {
@@ -418,6 +538,7 @@ color: #0A3853;
     display: block;
     height: 153px;
     width: 2px;
+    margin-left: 80px;
 }
 
 .footer-item-title {
@@ -427,6 +548,9 @@ color: #0A3853;
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
+}
+.footer-coop-item {
+    min-width: 769px;
 }
 
 .footer-item-line {
